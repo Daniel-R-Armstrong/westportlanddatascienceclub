@@ -21,11 +21,16 @@ git push
 #Delete file
 rm wpdsc
 
+#Update index
+git add .
 
+# commit changes
 git commit
 
+#Publish repository
 git push
 
+#Create a new branch
 git checkout -b wpdsc
 
 git push --set-upstream origin wpdsc
