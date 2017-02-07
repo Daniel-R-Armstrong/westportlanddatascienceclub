@@ -18,7 +18,9 @@ git commit -a
 # Publish files to remote server master branch
 git push
 
+#Delete file
 rm wpdsc
+
 
 git commit
 
