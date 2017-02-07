@@ -33,7 +33,12 @@ git push
 #Create a new branch
 git checkout -b wpdsc
 
+#Edit code
+vi git commands.txt
+
+#Publish branch to remote server
 git push --set-upstream origin wpdsc
+
 
 git checkout master
 
