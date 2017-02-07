@@ -1,23 +1,44 @@
-git clone https://github.com/gbrough/we
-stportlanddatascienceclub
+#Create new repository on your machine 
+git init
 
+#Copy remote repository to your machine
+git clone https://github.com/gbrough/westportlanddatascienceclub
+
+#Switch to working directory
+cd /Users/gmoney1/GitHub/westportlanddatascienceclub/westportlanddatascienceclub/Git
+#Create Edit code
+vi wpdsc
+
+#Add to index - New file can be tracked
 git add .
 
+#Commit file changes
 git commit -a
 
+# Publish files to remote server master branch
 git push
 
+#Delete file
 rm wpdsc
 
+#Update index
+git add .
+
+# commit changes
 git commit
 
+#Publish repository
 git push
 
-vim file
-
+#Create a new branch
 git checkout -b wpdsc
 
+#Edit code
+vi git commands.txt
+
+#Publish branch to remote server
 git push --set-upstream origin wpdsc
+
 
 git checkout master
 
@@ -25,7 +46,11 @@ git merge wpdsc
 
 git push
 
+git branch newfile
+git add new file
+git branch newfile add .
 
+git pull https://github.com/gbrough/westportlanddatascienceclub
 
 
 
