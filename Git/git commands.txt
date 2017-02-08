@@ -53,13 +53,19 @@ git checkout -b #subbranch_of_branchname
 git push --set-upstream origin #subbranch_of_branchname
 
 
-
 #Extra commands
-#Switch back to master branch
-git checkout master
+#show changes
+git diff
+
+git status
+git show
+
 
 #Show current branch
 git branch
+
+#Switch back to master branch
+git checkout master
 
 #Delete branch
 git branch -d #branchname
