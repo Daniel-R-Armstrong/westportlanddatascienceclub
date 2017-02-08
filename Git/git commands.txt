@@ -6,8 +6,9 @@ git clone https://github.com/gbrough/westportlanddatascienceclub
 
 #Switch to working directory
 cd /Users/gmoney1/GitHub/westportlanddatascienceclub/westportlanddatascienceclub/Git
+
 #Create Edit code
-vi wpdsc
+vi #filename
 
 #Add to index - New file can be tracked
 git add .
@@ -15,41 +16,55 @@ git add .
 #Commit file changes
 git commit -a
 
-# Publish files to remote server master branch
+# Publish/Sync files to remote server master branch
 git push
 
 #Delete file
-rm wpdsc
+rm #filename
 
 #Update index
 git add .
 
 # commit changes
-git commit
+git commit -a -m #’note’
 
 #Publish repository
 git push
 
 #Create a new branch
-git checkout -b wpdsc
+git checkout -b #branchname
+
+#Switch to existing branch
+git checkout -B #branchname
 
 #Edit code
 vi git commands.txt
 
 #Publish branch to remote server
-git push --set-upstream origin wpdsc
+git push --set-upstream origin #banchname
+
+#Merge branch with master
+git merge gitcommands
+
+#Create a subbranch
+git checkout -b #subbranch_of_branchname
+
+#Publish subbranch
+git push --set-upstream origin #subbranch_of_branchname
 
 
+
+#Extra commands
+#Switch back to master branch
 git checkout master
 
-git merge wpdsc
+#Show current branch
+git branch
 
-git push
+#Delete branch
+git branch -d #branchname
 
-git branch newfile
-git add new file
-git branch newfile add .
-
+#Fetch changes from remote server
 git pull https://github.com/gbrough/westportlanddatascienceclub
 
 
