@@ -127,8 +127,7 @@ git push origin master
 
 #Delete branch
 git branch -d gitcommands
-
-<<<<<<< HEAD
+jjj<<<<<<< HEAD
 #Create a subbranch
 git checkout -b subgitcommands
 
