@@ -5,7 +5,7 @@ git clone https://github.com/gbrough/westportlanddatascienceclub /Users/gmoney1/
 git init /Users/gmoney1/GitHub/westportlanddatascienceclub/
 
 #Switch to working directory
-cd /Users/gmoney1/GitHub/westportlanddatascienceclub/
+
 
 #Create Edit code
 vi #filename
@@ -56,13 +56,6 @@ git checkout -b #subbranch_of_branchname
 git push --set-upstream origin #subbranch_of_branchname
 
 
-#Extra commands
-
-#Status of commits, if branch is current, changes tracked
-git status
-
-#Latest log of changes
-git show
 
 #Show current branch
 git branch
