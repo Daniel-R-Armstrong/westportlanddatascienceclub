@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-v6
+v7
 =======
 >>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 #Copy remote repository to your machine
