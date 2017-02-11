@@ -11,7 +11,7 @@ cd /Users/gmoney1/GitHub/westportlanddatascienceclub/
 git branch
 
 #Switch to existing branch
-git checkout -B #branchname
+git checkout -B gitcommands
 
 #Create a branch
 git checkout -b gitcommands
@@ -40,14 +40,13 @@ git push --set-upstream origin gitcommands
 #Merge branch with master
 git merge gitcommands
 
+git fetch origin
+git checkout -b gitcommands origin/gitcommands
+git merge master
 
-#Publish subbranch
-git push --set-upstream origin #subbranch_of_branchname
-
-#Extra commands
-
-
-
+git checkout master
+git merge --no-ff gitcommands
+git push origin master
 
 
 #Switch back to master branch
@@ -58,3 +57,6 @@ git branch -d #branchname
 
 #Fetch changes from remote server
 git pull https://github.com/gbrough/westportlanddatascienceclub
+
+#Publish subbranch
+git push --set-upstream origin #subbranch_of_branchname
