@@ -1,11 +1,11 @@
-#Create new repository on your machine 
-git init
-
 #Copy remote repository to your machine
-git clone https://github.com/gbrough/westportlanddatascienceclub
+git clone https://github.com/gbrough/westportlanddatascienceclub /Users/gmoney1/GitHub/westportlanddatascienceclub/
+
+#Initialize Git directory
+git init /Users/gmoney1/GitHub/westportlanddatascienceclub/
 
 #Switch to working directory
-cd /Users/gmoney1/GitHub/westportlanddatascienceclub/westportlanddatascienceclub/Git
+cd /Users/gmoney1/GitHub/westportlanddatascienceclub/
 
 #Create Edit code
 vi #filename
@@ -72,6 +72,3 @@ git branch -d #branchname
 
 #Fetch changes from remote server
 git pull https://github.com/gbrough/westportlanddatascienceclub
-
-
-
