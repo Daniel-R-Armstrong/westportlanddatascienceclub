@@ -10,64 +10,43 @@ cd /Users/gmoney1/GitHub/westportlanddatascienceclub/
 #Show current branch
 git branch
 
+#Switch to existing branch
+git checkout -B #branchname
+
 #Create a branch
 git checkout -b gitcommands
 
 #Create Edit code
-vi gitcommands.tx
-
-#Add to index - New file can be tracked
-git add .
-
-#Commit file changes
-git commit -a
-
-# Publish/Sync files to remote server master branch
-git push
-
-#Delete file
-rm #filename
-
-#Update index
-git add .
-
-# commit changes
-git commit -a -m #’note’
-
-#Publish repository
-git push
-
-#Create a new branch
-git checkout -b #branchname
-
-#Switch to existing branch
-git checkout -B #branchname
-
-#Edit code
-vi git commands.txt
+vi gitcommands.txt
 
 #show changes
 git diff
-
-#Publish branch to remote server
-git push --set-upstream origin #banchname
-
-#Merge branch with master
-git merge gitcommands
-
-
-
-#Publish subbranch
-git push --set-upstream origin #subbranch_of_branchname
-
-
-#Extra commands
 
 #Status of commits, if branch is current, changes tracked
 git status
 
 #Latest log of changes
 git show
+
+#Add to index - New file can be tracked
+git add .
+
+#Commit file changes
+git commit -a -m 'note'
+
+#Publish repository
+git push --set-upstream origin gitcommands
+
+#Merge branch with master
+git merge gitcommands
+
+
+#Publish subbranch
+git push --set-upstream origin #subbranch_of_branchname
+
+#Extra commands
+
+
 
 
 
