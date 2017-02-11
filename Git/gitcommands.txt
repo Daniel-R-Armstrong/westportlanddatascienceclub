@@ -18,9 +18,16 @@ vi #filename
 #Show current branch
 git branch
 
+#Switch to existing branch
+git checkout -B gitcommands
+
 #Create a branch
 git checkout -b gitcommands
 
+<<<<<<< HEAD
+#Fetch changes from remote server
+git pull https://github.com/gbrough/westportlanddatascienceclub
+=======
 #Create Edit code
 vi gitcommands.tx
 >>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
@@ -51,13 +58,16 @@ git checkout -b #branchname
 
 #Switch to existing branch
 git checkout -B #branchname
+>>>>>>> origin/gitcommands
 
-#Edit code
-vi git commands.txt
+#Create Edit code
+vi gitcommands.txt
 
 #show changes
 git diff
 
+<<<<<<< HEAD
+=======
 #Publish branch to remote server
 git push --set-upstream origin #banchname
 
@@ -82,6 +92,7 @@ git push --set-upstream origin #subbranch_of_branchname
 =======
 =======
 >>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
+>>>>>>> origin/gitcommands
 #Status of commits, if branch is current, changes tracked
 git status
 
@@ -89,21 +100,45 @@ git status
 git show
 
 <<<<<<< HEAD
+#Add to index - New file can be tracked
+git add .
+
+#Commit file changes
+git commit -a -m 'note'
+
+#Publish repository
+git push --set-upstream origin gitcommands
+=======
+<<<<<<< HEAD
 #Show current branch
 git branch
 =======
 
 >>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
+>>>>>>> origin/gitcommands
 
-#Switch back to master branch
+#Switch back to master
 git checkout master
 
-#Delete branch
-git branch -d #branchname
+#Merge branch with master
+git merge --no-ff gitcommands
 
+git push origin master
+
+#Delete branch
+git branch -d gitcommands
+
+<<<<<<< HEAD
+#Create a subbranch
+git checkout -b subgitcommands
+
+#Publish subbranch
+git push --set-upstream origin #subbranch_of_branchname
+=======
 #Fetch changes from remote server
 <<<<<<< HEAD
 >>>>>>> c4b2fffab80657fd8446d2c4382b085e189d5d33:Git/git commands.txt
 =======
 >>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 git pull https://github.com/gbrough/westportlanddatascienceclub
+>>>>>>> origin/gitcommands
