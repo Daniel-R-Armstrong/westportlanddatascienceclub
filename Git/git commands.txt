@@ -40,6 +40,9 @@ git checkout -B #branchname
 #Edit code
 vi git commands.txt
 
+#show changes
+git diff
+
 #Publish branch to remote server
 git push --set-upstream origin #banchname
 
@@ -54,12 +57,12 @@ git push --set-upstream origin #subbranch_of_branchname
 
 
 #Extra commands
-#show changes
-git diff
 
+#Status of commits, if branch is current, changes tracked
 git status
-git show
 
+#Latest log of changes
+git show
 
 #Show current branch
 git branch
