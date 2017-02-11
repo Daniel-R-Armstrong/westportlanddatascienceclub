@@ -16,6 +16,9 @@ git checkout -B gitcommands
 #Create a branch
 git checkout -b gitcommands
 
+#Fetch changes from remote server
+git pull https://github.com/gbrough/westportlanddatascienceclub
+
 #Create Edit code
 vi gitcommands.txt
 
@@ -37,26 +40,19 @@ git commit -a -m 'note'
 #Publish repository
 git push --set-upstream origin gitcommands
 
-#Merge branch with master
-git merge gitcommands
-
-git fetch origin
-git checkout -b gitcommands origin/gitcommands
-git merge master
-
+#Switch back to master
 git checkout master
+
+#Merge branch with master
 git merge --no-ff gitcommands
+
 git push origin master
 
-
-#Switch back to master branch
-git checkout master
-
 #Delete branch
-git branch -d #branchname
+git branch -d gitcommands
 
-#Fetch changes from remote server
-git pull https://github.com/gbrough/westportlanddatascienceclub
+#Create a subbranch
+git checkout -b subgitcommands
 
 #Publish subbranch
 git push --set-upstream origin #subbranch_of_branchname
