@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 v2
+=======
+>>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 #Copy remote repository to your machine
 git clone https://github.com/gbrough/westportlanddatascienceclub /Users/gmoney1/GitHub/westportlanddatascienceclub/
 
@@ -8,8 +11,19 @@ git init /Users/gmoney1/GitHub/westportlanddatascienceclub/
 #Switch to working directory
 cd /Users/gmoney1/GitHub/westportlanddatascienceclub/
 
+<<<<<<< HEAD
 #Create Edit code
 vi #filename
+=======
+#Show current branch
+git branch
+
+#Create a branch
+git checkout -b gitcommands
+
+#Create Edit code
+vi gitcommands.tx
+>>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 
 #Add to index - New file can be tracked
 git add .
@@ -50,8 +64,12 @@ git push --set-upstream origin #banchname
 #Merge branch with master
 git merge gitcommands
 
+<<<<<<< HEAD
 #Create a subbranch
 git checkout -b #subbranch_of_branchname
+=======
+
+>>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 
 #Publish subbranch
 git push --set-upstream origin #subbranch_of_branchname
@@ -59,16 +77,23 @@ git push --set-upstream origin #subbranch_of_branchname
 
 #Extra commands
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Git/gitcommands.txt
 =======
+=======
+>>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 #Status of commits, if branch is current, changes tracked
 git status
 
 #Latest log of changes
 git show
 
+<<<<<<< HEAD
 #Show current branch
 git branch
+=======
+
+>>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 
 #Switch back to master branch
 git checkout master
@@ -77,5 +102,8 @@ git checkout master
 git branch -d #branchname
 
 #Fetch changes from remote server
+<<<<<<< HEAD
 >>>>>>> c4b2fffab80657fd8446d2c4382b085e189d5d33:Git/git commands.txt
+=======
+>>>>>>> bd7e0ad4b4071958b94875c3403a0394ec4ae17a
 git pull https://github.com/gbrough/westportlanddatascienceclub
